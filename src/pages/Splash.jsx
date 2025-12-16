@@ -7,8 +7,8 @@ const Splash = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            navigate('/profile'); // Flow: Splash -> Profile (as per typical demo flow, or Chat)
-        }, 2000);
+            navigate('/login'); // Flow: Splash -> Login
+        }, 3000);
         return () => clearTimeout(timer);
     }, [navigate]);
 

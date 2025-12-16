@@ -18,8 +18,8 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<DevMenu />} /> {/* Default to Dev Menu for Verification */}
-                <Route path="/splash" element={<Splash />} />
+                <Route path="/" element={<Splash />} />
+                <Route path="/dev" element={<DevMenu />} /> {/* Moved DevMenu to /dev */}
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
